@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Autistic Lady</title>
+    <style>
+        h1,
+        h2{
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        h1{
+            font-size: 35px;
+            margin: 10;
+            font-weight: 600; 
+        }
+
+        h2{
+            font-size: 28px;
+            line-height: 50px;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 40px;
+            box-shadow: #578DD3;
+            border: 3px solid #94BEE8;
+
+
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2;
+            font-size: 15px;
+            margin: 10px 0px 20px;
+            text-align: center;
+        }
+        .mainBox {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 60px;
+            background: linear-gradient(to bottom , #EEEEEE, #d6d6d6);
+            border-radius: 40px;
+                
+        }
+
+        button{
+            text-align: center;
+            font-size: 25px;
+            display: block;
+            margin: 30px auto;
+            border: 1px solid #94BEE8;
+            background: #94BEE8;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 20px 30px;
+            border-radius: 40px;
+            transition: all 200ms ease;
+            box-shadow: #578DD3;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #F8D06C;
+            border: 1px solid #F8D06C;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #578DD3;
+            border-radius: 5%;
+            
+        }
+
+        a{
+            color: black;
+        }
+
+        a:hover{
+            color:#578DD3;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class = "mainBox">
+        <h1>
+            Welcome to
+        </h1>
+        <img
+        src ="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/659/original/Website_images-3.png?1670764057"
+        alt="text that reads Happy Autistic Lady above an illustration of
+        two girls with braids, in the middle there is a dog"
+        width = "500";
+        />
+        <h2>
+            Happy Autistic Lady
+        </h2>
+        <p>
+            Was founded by Vera shortly after she was diagnosed Autistic to share 
+            her experiences and spread awareness, understanding and acceptance of autism. 
+            Together with myself (her sister, Iveta) we  amplify the voices and experiences of 
+            Autistic people through illustrations on our <a href = "https://www.instagram.com/happyautisticlady/" 
+            target= _blank"> <span style=" color:#578DD3 ;">social media</span></a>, 
+            unique Autism stickers and stationary, educational resources, and a blog. 
+        </p>
+        <hr>
+        <button>
+        <a href = "https://www.happyautisticlady.com" target = "_blankt">
+            Learn more here!
+        </a>
+        </button>
+        <br />
+        <p class = "footer">
+            ➡️
+            <em> This page was built by 
+                  <strong> Iveta </strong>
+            </em>
+             ⬅️
+        </p>
+    </div>
+    <script>
+        function connect(){
+            let name = prompt ("What is your name?");
+            alert ("It's nice to meet you " + name + " !");
+
+            let connectAnswer = prompt ("Do you want to connect on LinkedIn (Yes/No)");
+            
+            if (connectAnswer === "yes" || connectAnswer === "Yes") {
+                window.location.href = 'https://www.linkedin.com/in/iveta-pudilova/'; 
+            } 
+            else {
+                alert ("No worries! 😊");
+             }
+
+            }
+        let ivetaLink = document.querySelector(".footer");
+
+        ivetaLink.addEventListener("click", connect);
+    </script>
+</body>
+</html>
